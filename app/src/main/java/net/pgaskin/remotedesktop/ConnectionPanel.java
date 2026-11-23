@@ -644,7 +644,7 @@ final class ConnectionPanel {
         for (ConnectionFact f : rows) {
             final ViewGroup into = f.diagnostic() ? diagnostics : facts;
             final View row = inf.inflate(R.layout.item_fact, into, false);
-            ((TextView) row.findViewById(R.id.label)).setText(f.label());
+            ((TextView) row.findViewById(R.id.label)).setText(UiText.get(activity, f.label()));
             final TextView value = row.findViewById(R.id.value);
             value.setText(display(f));
             into.addView(row);

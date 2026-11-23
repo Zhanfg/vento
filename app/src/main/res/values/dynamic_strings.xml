@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<!-- Dynamic backend and input-setting display text; protocol keys and values are never translated. -->
+<resources>
+    <string name="ui_text_dbafc913" formatted="false">The most robust RDP implementation. Support EGFX with hardware-accelerated H.264 video, and supports audio. This is the best one to use with a Windows RDP server.</string>
+    <string name="ui_text_96778d53" formatted="false">Rust RDP implementation. Uses less CPU than FreeRDP, but drops more frames</string>
+    <string name="ui_text_86b07dfb" formatted="false">Usually the best option for typical usage. Has the lowest bandwidth usage for small incremental updates, and is the most CPU efficient.</string>
+    <string name="ui_text_543f35f4" formatted="false">RealVNC\'s proprietary client implementation. This is the only one which supports UDP, ZRLE2, and RealVNC\'s proprietary authentication/encryption. It performs significantly better than the others when connecting to a RealVNC server, especially for typical desktop usage.</string>
+    <string name="ui_text_f3da6923" formatted="false">Rust RFB implementation. Does not support Tight encoding, and typically uses more bandwith and performs worse on slow networks. Allows remote pointer position updates, where supported by the server.</string>
+    <string name="ui_text_fa0dc1b7" formatted="false">RustDesk backend supporting direct or rendezvous connections. Uses hardware-accelerated video codecs.</string>
+    <string name="ui_text_a074592e" formatted="false">Usually used for QEMU/libvirt/Proxmox virtual machines. Supports clipboard and screen resizing if the guest agent is running.</string>
+    <string name="ui_text_5ed0950e" formatted="false">Fastest implementation, dropping the fewest frames, but using 2-5x the CPU usage. This the only VNC backend which supports H.264 encoding, which is the most bandwidth-efficient for large screen updates, where supported by the server. It also supports QEMU audio.</string>
+    <string name="ui_text_90ebde92" formatted="false">NLA</string>
+    <string name="ui_text_c0b1c59c" formatted="false">Network Level Authentication authenticates using CredSSP before the session starts rather than using the server-side login screen.</string>
+    <string name="ui_text_39040b99" formatted="false">If supported by the server</string>
+    <string name="ui_text_d718f16a" formatted="false">Where the server offers it</string>
+    <string name="ui_text_51e4b240" formatted="false">Required</string>
+    <string name="ui_text_b2ff2b29" formatted="false">Never</string>
+    <string name="ui_text_9ba4f293" formatted="false">Legacy TLS</string>
+    <string name="ui_text_e11b001a" formatted="false">Allow TLS 1.0 and 1.1 and their weaker keys, for a server that has nothing newer, such as Windows 7 or Server 2008 R2 without updates.</string>
+    <string name="ui_text_805ec738" formatted="false">Desktop size</string>
+    <string name="ui_text_1db224b2" formatted="false">Preferred screen resolution.</string>
+    <string name="ui_text_70e938cf" formatted="false">Display scale</string>
+    <string name="ui_text_a27c9b01" formatted="false">Supported on Windows 8.1 and later.</string>
+    <string name="ui_text_efbe7bfe" formatted="false">Monitors</string>
+    <string name="ui_text_4071f082" formatted="false">Simulate multiple monitors.</string>
+    <string name="ui_text_b62b9fa8" formatted="false">Graphics</string>
+    <string name="ui_text_ee4a6b47" formatted="false">EGFX is the newest and most advanced codec, RemoteFX is older, and Bitmap sends raw images.</string>
+    <string name="ui_text_8f9f9cef" formatted="false">EGFX, no video</string>
+    <string name="ui_text_626a9046" formatted="false">Bitmap</string>
+    <string name="ui_text_22c1036f" formatted="false">Bitmaps</string>
+    <string name="ui_text_8e98d45c" formatted="false">EGFX (experimental)</string>
+    <string name="ui_text_b7b7449b" formatted="false">EGFX is preferred by Windows and supports H.264, RemoteFX is older, and Bitmaps sends raw images.</string>
+    <string name="ui_text_cde44af7" formatted="false">Visual effects</string>
+    <string name="ui_text_bf58944e" formatted="false">Controls the amount of animation and visual effects, if supported by the server.</string>
+    <string name="ui_text_7fa5ff5c" formatted="false">Full</string>
+    <string name="ui_text_c0cc603d" formatted="false">Balanced</string>
+    <string name="ui_text_749f3545" formatted="false">Limited</string>
+    <string name="ui_text_f0408340" formatted="false">Everything</string>
+    <string name="ui_text_378a393c" formatted="false">No animation</string>
+    <string name="ui_text_38861430" formatted="false">As little as possible</string>
+    <string name="ui_text_b3ca9a34" formatted="false">Sound</string>
+    <string name="ui_text_56de9062" formatted="false">Controls where sound is played, if supported by the server.</string>
+    <string name="ui_text_0dc6b4aa" formatted="false">Off</string>
+    <string name="ui_text_fa0d176a" formatted="false">This computer</string>
+    <string name="ui_text_3902f681" formatted="false">This phone</string>
+    <string name="ui_text_65b4a54f" formatted="false">The remote machine</string>
+    <string name="ui_text_961abb95" formatted="false">Compression</string>
+    <string name="ui_text_e5b57b45" formatted="false">Enable connection-level compression. Uses less bandwidth, but more CPU.</string>
+    <string name="ui_text_0e2a2510" formatted="false">Encoding</string>
+    <string name="ui_text_6eb55616" formatted="false">Preferred image encoding, overriding the server\'s selection if not Automatic.</string>
+    <string name="ui_text_616a6784" formatted="false">Automatic</string>
+    <string name="ui_text_642cc992" formatted="false">Raw (uncompressed)</string>
+    <string name="ui_text_9a92b8c2" formatted="false">Image compression level, where supported by the encoding.</string>
+    <string name="ui_text_1f747f40" formatted="false">Picture quality</string>
+    <string name="ui_text_e4c02eef" formatted="false">JPEG image quality, for Tight encoding.</string>
+    <string name="ui_text_815191a3" formatted="false">Lossless</string>
+    <string name="ui_text_387b0bb9" formatted="false">9 (best)</string>
+    <string name="ui_text_ede3f513" formatted="false">5 (balanced)</string>
+    <string name="ui_text_2983709d" formatted="false">0 (smallest)</string>
+    <string name="ui_text_21ae5640" formatted="false">Colour depth</string>
+    <string name="ui_text_22049847" formatted="false">Pixel color depth. Takes effect on the next connection.</string>
+    <string name="ui_text_f86ee70f" formatted="false">Full colour (24-bit)</string>
+    <string name="ui_text_5a28074b" formatted="false">6-bit (rgb222)</string>
+    <string name="ui_text_94c68b8f" formatted="false">3-bit (rgb111)</string>
+    <string name="ui_text_b1310860" formatted="false">Encoding and color depth preset.</string>
+    <string name="ui_text_be0a061d" formatted="false">High</string>
+    <string name="ui_text_09be5f96" formatted="false">Medium</string>
+    <string name="ui_text_b1dd9521" formatted="false">Low</string>
+    <string name="ui_text_9525b78e" formatted="false">Custom</string>
+    <string name="ui_text_ab063df6" formatted="false">Preferred image encoding. The server may still choose to use a different one. Only used when quality is set to Custom</string>
+    <string name="ui_text_111e49ca" formatted="false">JPEG (lossy)</string>
+    <string name="ui_text_7204cdef" formatted="false">JRLE (lossy)</string>
+    <string name="ui_text_3fd80569" formatted="false">Pixel colour depth. Only used when quality is set to Low or Custom. If unset, Low uses 8 colours (rgb111).</string>
+    <string name="ui_text_3764c564" formatted="false">64 colours (rgb222)</string>
+    <string name="ui_text_dcc573f1" formatted="false">8 colours (rgb111)</string>
+    <string name="ui_text_5b1cfe57" formatted="false">Reconnect automatically</string>
+    <string name="ui_text_1b8a0c01" formatted="false">Do not ask before re-establishing dropped connections.</string>
+    <string name="ui_text_3328d521" formatted="false">Enable UDP</string>
+    <string name="ui_text_a83a0684" formatted="false">Enable RealVNC\'s proprietary SCTP/RTP-based UDP protocol, falling back to TCP if the server doesn\'t respond within 500ms.</string>
+    <string name="ui_text_c8352b3c" formatted="false">Encryption</string>
+    <string name="ui_text_dab77eab" formatted="false">Whether to encrypt connections.</string>
+    <string name="ui_text_ef397786" formatted="false">Only if required by the server</string>
+    <string name="ui_text_71982aec" formatted="false">Let the server decide</string>
+    <string name="ui_text_d148b69a" formatted="false">Warn when unencrypted</string>
+    <string name="ui_text_bed5eb39" formatted="false">Show a warning when connecting to a server which doesn\'t support encryption.</string>
+    <string name="ui_text_403eb0e1" formatted="false">Dot for an invisible cursor</string>
+    <string name="ui_text_0b0d72fc" formatted="false">Show a dot when the server hides the cursor.</string>
+    <string name="ui_text_6d223c39" formatted="false">Keep-alive interval</string>
+    <string name="ui_text_724ce2f0" formatted="false">Seconds between keep-alives on an idle connection.</string>
+    <string name="ui_text_9c282d53" formatted="false">Keep-alive timeout</string>
+    <string name="ui_text_bebe51ee" formatted="false">Seconds to wait for an answer before giving up.</string>
+    <string name="ui_text_a67e9e8b" formatted="false">Fetch RealVNC\'s library</string>
+    <string name="ui_text_22fb04d3" formatted="false">Where the proprietary library from the RealVNC Viewer APK comes from when it is missing: off, prompt (ask, then download it), auto (download it), the path of a local APK, or an http(s) URL of an APK.</string>
+    <string name="ui_text_b07cf2b0" formatted="false">TLS (VeNCrypt) extension support.</string>
+    <string name="ui_text_b1ce9146" formatted="false">Connect by</string>
+    <string name="ui_text_700560f3" formatted="false">Address</string>
+    <string name="ui_text_c1fbc356" formatted="false">Connect by ID via a rendezvous server. Encrypted.</string>
+    <string name="ui_text_9e2a975d" formatted="false">Connect to a machine by IP. Not encrypted.</string>
+    <string name="ui_text_bfc6f851" formatted="false">Rendezvous server</string>
+    <string name="ui_text_09346013" formatted="false">Leave empty for the default public rendezvous server.</string>
+    <string name="ui_text_50bed01a" formatted="false">Rendezvous server key</string>
+    <string name="ui_text_a09401e9" formatted="false">Public key for the rendezvous server.</string>
+    <string name="ui_text_cb7fbec6" formatted="false">Quality</string>
+    <string name="ui_text_3c62b0e3" formatted="false">Control the video bitrate.</string>
+    <string name="ui_text_035f1f67" formatted="false">Best</string>
+    <string name="ui_text_ac794580" formatted="false">Frame rate</string>
+    <string name="ui_text_3a92de1b" formatted="false">Limits the maximum FPS.</string>
+    <string name="ui_text_858af655" formatted="false">Codec</string>
+    <string name="ui_text_818348da" formatted="false">Preferred codec, if supported by the server.</string>
+    <string name="ui_text_b8acdac7" formatted="false">Play the remote machine\'s audio.</string>
+    <string name="ui_text_ac3324c5" formatted="false">Lock when the session ends</string>
+    <string name="ui_text_877587dc" formatted="false">Lock the remote screen on disconnecting.</string>
+    <string name="ui_text_304ff7fb" formatted="false">None</string>
+    <string name="ui_text_380d76aa" formatted="false">Plaintext.</string>
+    <string name="ui_text_57ad8ac7" formatted="false">Encrypted.</string>
+    <string name="ui_text_45064ff8" formatted="false">Image compression</string>
+    <string name="ui_text_70718590" formatted="false">Preferred image compression method.</string>
+    <string name="ui_text_e6804a7f" formatted="false">GLZ, if better</string>
+    <string name="ui_text_19e7b75e" formatted="false">LZ, if better</string>
+    <string name="ui_text_6f7fc65d" formatted="false">Play audio sent by the server, if it offers any.</string>
+    <string name="ui_text_bbba353a" formatted="false">View only</string>
+    <string name="ui_text_af728fe8" formatted="false">Do not send input events.</string>
+    <string name="ui_text_287242dd" formatted="false">Do not send input or clipboard events.</string>
+    <string name="ui_text_593158f2" formatted="false">Preferred image encoding. The server may still choose to use a different one.</string>
+    <string name="ui_text_4e2c39c9" formatted="false">Pixel color depth.</string>
+    <string name="ui_text_947cfbe4" formatted="false">Offer H.264 encoding</string>
+    <string name="ui_text_74834bed" formatted="false">Allow the server to use H.264 encoding, with local hardware-accelerated decoding.</string>
+    <string name="ui_text_e94dad58" formatted="false">Bell</string>
+    <string name="ui_text_a12c66ff" formatted="false">Vibrate when the server rings the bell.</string>
+    <string name="ui_text_eb0bbef4" formatted="false">Shared</string>
+    <string name="ui_text_2062fb39" formatted="false">Do not ask the server to disconnect other clients.</string>
+    <string name="ui_text_aceb3feb" formatted="false">Unverified encryption</string>
+    <string name="ui_text_bf235d06" formatted="false">Ask before using encryption without a peer certificate.</string>
+    <string name="ui_text_9fb86801" formatted="false">1 (fastest)</string>
+    <string name="ui_text_2ef26a18" formatted="false">6 (balanced)</string>
+    <string name="ui_text_6b4b7ae4" formatted="false">9 (smallest)</string>
+    <string name="ui_text_66fd42e3" formatted="false">Do not change</string>
+    <string name="ui_text_0f93ef11" formatted="false">Match local device</string>
+    <string name="ui_text_1cb1b18f" formatted="false">One</string>
+    <string name="ui_text_20af1fc9" formatted="false">Two</string>
+    <string name="ui_text_2e430863" formatted="false">Three</string>
+    <string name="ui_text_082ab98e" formatted="false">Pointer acceleration</string>
+    <string name="ui_text_2656b10a" formatted="false">Scale cursor movement by the speed of the gesture.</string>
+    <string name="ui_text_85d8aa49" formatted="false">Adaptive acceleration</string>
+    <string name="ui_text_538edb9f" formatted="false">Reduce acceleration at low speeds for better precision.</string>
+    <string name="ui_text_89c6a865" formatted="false">Axis locking</string>
+    <string name="ui_text_e24f5b54" formatted="false">Snap slow straight movements to the horizontal or vertical axis.</string>
+    <string name="ui_text_6eedd764" formatted="false">Hover assist</string>
+    <string name="ui_text_44b09912" formatted="false">Slow the pointer briefly when the remote cursor changes shape.</string>
+    <string name="ui_text_3079cfef" formatted="false">Momentum</string>
+    <string name="ui_text_9e58cbcb" formatted="false">Keep moving the cursor after a flick.</string>
+    <string name="ui_text_bdc1c07b" formatted="false">Raw motion for remote cursors</string>
+    <string name="ui_text_2a8241fc" formatted="false">Skip acceleration, axis locking, and momentum when the remote cursor is relative.</string>
+    <string name="ui_text_e33a28c3" formatted="false">Edge scrolling</string>
+    <string name="ui_text_167cfe84" formatted="false">Pan the desktop while dragging against the edge of the screen.</string>
+    <string name="ui_text_1c5988fd" formatted="false">Natural scrolling</string>
+    <string name="ui_text_a96aedff" formatted="false">Invert the scroll direction of gestures and the mouse wheel.</string>
+    <string name="ui_text_bb5c9eae" formatted="false">Recenter cursor when zooming</string>
+    <string name="ui_text_a7a7238e" formatted="false">Move the cursor to the center of the view when the zoom changes.</string>
+    <string name="ui_text_cf5bf163" formatted="false">Pan margin (display)</string>
+    <string name="ui_text_9ea04d80" formatted="false">Additional panning space so the edges stay away from the rounded corners, camera cutout, and system bars.</string>
+    <string name="ui_text_1550cc49" formatted="false">Pan margin (px)</string>
+    <string name="ui_text_03c17d57" formatted="false">Additional panning space to add to desktop edges, whether or not anything is over them.</string>
+    <string name="ui_text_26def047" formatted="false">Solid extension keyboard bar</string>
+    <string name="ui_text_6a38d5b2" formatted="false">Inset the desktop above the extension keyboard bar instead of fading it over the desktop.</string>
+    <string name="ui_text_4912de77" formatted="false">Extension keyboard haptics</string>
+    <string name="ui_text_0feb4dcb" formatted="false">Vibrate when pressing extension keyboard keys.</string>
+    <string name="ui_text_62ab8141" formatted="false">Capture physical mouse</string>
+    <string name="ui_text_4e89cf71" formatted="false">Capture the pointer while connected to send relative motion instead of using the local cursor.</string>
+    <string name="ui_text_c6342fbc" formatted="false">Physical mouse speed</string>
+    <string name="ui_text_6868158e" formatted="false">Multiplier for captured mouse motion.</string>
+    <string name="ui_text_ef164d02" formatted="false">Physical mouse wheel step</string>
+    <string name="ui_text_9cfad3f7" formatted="false">Wheel detents per scroll event sent. Increase for high-resolution wheels.</string>
+    <string name="ui_text_e7a5ac47" formatted="false">Click hold (ms)</string>
+    <string name="ui_text_fa6fa546" formatted="false">Button hold time for taps, and the window for double-taps and tap-then-drag.</string>
+    <string name="ui_text_f300b343" formatted="false">Two-finger scroll step (px)</string>
+    <string name="ui_text_ada35114" formatted="false">Finger travel per scroll event sent.</string>
+    <string name="ui_text_813a0b44" formatted="false">Scroll bar gearing (ticks per click)</string>
+    <string name="ui_text_e61ffcd2" formatted="false">Ticks between scroll events at rate 1, scaling down towards the ends of the bar.</string>
+    <string name="ui_text_d20372bd" formatted="false">Scroll bar maximum rate (clicks per tick)</string>
+    <string name="ui_text_1371e0f2" formatted="false">Scroll rate at the ends of the bar, scaling to zero at the middle.</string>
+    <string name="ui_text_cf8d0cb9" formatted="false">Scroll bar tick (ms)</string>
+    <string name="ui_text_3e860aa0" formatted="false">Interval the two settings above are counted in.</string>
+    <string name="ui_text_21a851ee" formatted="false">Scroll bar repeat delay (ticks)</string>
+    <string name="ui_text_3003986a" formatted="false">Ticks before the first scroll event repeats, so a tap is a single scroll.</string>
+    <string name="ui_text_8e77ed6d" formatted="false">Transferred</string>
+</resources>

@@ -144,34 +144,34 @@ final class OptionScreen {
                 case CHOICE -> {
                     final ListPreference l = new ListPreference(ctx);
                     l.setEntries(o.choices().stream()
-                            .map(BackendOption.Choice::label).toArray(CharSequence[]::new));
+                            .map(c -> UiText.get(group.getContext(), c.label())).toArray(CharSequence[]::new));
                     l.setEntryValues(o.choices().stream()
                             .map(BackendOption.Choice::value).toArray(CharSequence[]::new));
                     l.setDefaultValue(def);
                     l.setSummaryProvider(pref -> withNote(((ListPreference) pref).getEntry(),
-                            o.summary()));
-                    l.setDialogTitle(o.label());
+                            UiText.get(ctx, o.summary())));
+                    l.setDialogTitle(UiText.get(ctx, o.label()));
                     yield l;
                 }
                 case INT, TEXT -> {
                     final EditTextPreference e = new EditTextPreference(ctx);
                     e.setDefaultValue(def);
-                    e.setDialogTitle(o.label());
+                    e.setDialogTitle(UiText.get(ctx, o.label()));
                     if (o.type() == BackendOption.Type.INT) {
                         e.setOnBindEditTextListener(t ->
                                 t.setInputType(InputType.TYPE_CLASS_NUMBER));
                     }
                     e.setSummaryProvider(pref -> withNote(
-                            ((EditTextPreference) pref).getText(), o.summary()));
+                            ((EditTextPreference) pref).getText(), UiText.get(ctx, o.summary())));
                     yield e;
                 }
             };
             p.setKey(o.key());
-            p.setTitle(o.label());
+            p.setTitle(UiText.get(ctx, o.label()));
             p.setIconSpaceReserved(false);
             p.setSingleLineTitle(false);
             if (o.type() == BackendOption.Type.BOOL && o.summary() != null) {
-                p.setSummary(o.summary());
+                p.setSummary(UiText.get(ctx, o.summary()));
             }
             group.addPreference(p);
         }
@@ -248,7 +248,7 @@ final class OptionScreen {
                     .filter(c -> c.requires() == null || on.test(c.requires()))
                     .collect(Collectors.toList());
             l.setEntries(offered.stream()
-                    .map(BackendOption.Choice::label).toArray(CharSequence[]::new));
+                    .map(c -> UiText.get(group.getContext(), c.label())).toArray(CharSequence[]::new));
             l.setEntryValues(offered.stream()
                     .map(BackendOption.Choice::value).toArray(CharSequence[]::new));
             BackendOption.settle(List.of(o), x -> l.getValue(), on, (x, fallback) -> {
@@ -317,22 +317,22 @@ final class OptionScreen {
             if (t.kind() == InputSettings.Kind.BOOL) {
                 final SwitchPreferenceCompat s = new SwitchPreferenceCompat(ctx);
                 s.setDefaultValue(Boolean.parseBoolean(def));
-                s.setSummary(t.summary());
+                s.setSummary(UiText.get(ctx, t.summary()));
                 p = s;
             } else {
                 final EditTextPreference e = new EditTextPreference(ctx);
                 e.setDefaultValue(def);
-                e.setDialogTitle(t.label());
-                e.setDialogMessage(t.summary());
+                e.setDialogTitle(UiText.get(ctx, t.label()));
+                e.setDialogMessage(UiText.get(ctx, t.summary()));
                 e.setOnBindEditTextListener(box ->
                         box.setInputType(InputType.TYPE_CLASS_NUMBER
                                 | InputType.TYPE_NUMBER_FLAG_DECIMAL));
                 e.setSummaryProvider(pref -> withNote(
-                        ((EditTextPreference) pref).getText(), t.summary()));
+                        ((EditTextPreference) pref).getText(), UiText.get(ctx, t.summary())));
                 p = e;
             }
             p.setKey(t.key());
-            p.setTitle(t.label());
+            p.setTitle(UiText.get(ctx, t.label()));
             p.setIconSpaceReserved(false);
             p.setSingleLineTitle(false);
             group.addPreference(p);

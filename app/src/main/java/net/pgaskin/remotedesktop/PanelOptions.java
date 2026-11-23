@@ -75,7 +75,7 @@ final class PanelOptions {
             final Row row = switch (o.type()) {
                 case BOOL -> {
                     final View v = inf.inflate(R.layout.item_option_switch, into, false);
-                    ((TextView) v.findViewById(R.id.label)).setText(o.label());
+                    ((TextView) v.findViewById(R.id.label)).setText(UiText.get(into.getContext(), o.label()));
                     final MaterialSwitch s = v.findViewById(R.id.toggle);
                     v.setOnClickListener(x -> set(o, Boolean.toString(!s.isChecked())));
                     yield new Row(o, v) {
@@ -87,14 +87,14 @@ final class PanelOptions {
                 }
                 case CHOICE -> {
                     final View v = inf.inflate(R.layout.item_option_choice, into, false);
-                    ((TextView) v.findViewById(R.id.label)).setText(o.label());
+                    ((TextView) v.findViewById(R.id.label)).setText(UiText.get(into.getContext(), o.label()));
                     final MaterialButton b = v.findViewById(R.id.value);
                     b.setOnClickListener(this::chooser);
                     b.setTag(o);
                     yield new Row(o, v) {
                         @Override
                         void refresh() {
-                            b.setText(o.labelFor(value(o)));
+                            b.setText(UiText.get(b.getContext(), o.labelFor(value(o))));
                         }
 
                         @Override
@@ -107,8 +107,8 @@ final class PanelOptions {
                 case INT, TEXT -> {
                     final TextInputLayout field = (TextInputLayout)
                             inf.inflate(R.layout.item_option_text, into, false);
-                    field.setHint(o.label());
-                    field.setHelperText(o.summary());
+                    field.setHint(UiText.get(field.getContext(), o.label()));
+                    field.setHelperText(UiText.get(field.getContext(), o.summary()));
                     final TextInputEditText box = field.findViewById(R.id.value);
                     if (o.type() == BackendOption.Type.INT) {
                         box.setInputType(InputType.TYPE_CLASS_NUMBER);
@@ -273,7 +273,7 @@ final class PanelOptions {
         final PopupMenu menu = new PopupMenu(anchor.getContext(), anchor);
         final String current = value(o);
         for (int i = 0; i < choices.size(); i++) {
-            menu.getMenu().add(Menu.NONE, i, i, choices.get(i).label());
+            menu.getMenu().add(Menu.NONE, i, i, UiText.get(anchor.getContext(), choices.get(i).label()));
         }
         // Checkable before checked: the flag is what makes the tick visible, and
         // setting it afterwards on an item that was never checkable does nothing.
@@ -309,15 +309,15 @@ final class PanelOptions {
         final String current = value(o);
         final AlertDialog dialog = new MaterialAlertDialogBuilder(
                 ctx, R.style.ThemeOverlay_RemoteDesktop_Dialog)
-                .setTitle(o.label())
+                .setTitle(UiText.get(ctx, o.label()))
                 .setView(body)
                 .setNegativeButton(android.R.string.cancel, null)
                 .create();
         for (BackendOption.Choice c : choices) {
             final View row = inf.inflate(R.layout.item_choice_described, items, false);
-            ((TextView) row.findViewById(R.id.label)).setText(c.label());
+            ((TextView) row.findViewById(R.id.label)).setText(UiText.get(ctx, c.label()));
             final TextView summary = row.findViewById(R.id.summary);
-            summary.setText(c.summary());
+            summary.setText(UiText.get(ctx, c.summary()));
             summary.setVisibility(c.summary() == null || c.summary().isEmpty()
                     ? View.GONE : View.VISIBLE);
             ((CompoundButton) row.findViewById(R.id.tick)).setChecked(c.value().equals(current));

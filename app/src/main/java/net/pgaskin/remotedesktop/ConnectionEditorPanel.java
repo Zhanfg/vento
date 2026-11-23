@@ -563,7 +563,7 @@ final class ConnectionEditorPanel {
             case CHOICE -> {
                 choices.add(new BackendOption.Choice("",
                         activity.getString(R.string.editor_option_default,
-                                o.labelFor(inherited))));
+                                UiText.get(activity, o.labelFor(inherited)))));
                 choices.addAll(o.choices());
             }
             // An empty field is already the unset case, and its default is in

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<!-- Dynamic backend and input-setting display text; protocol keys and values are never translated. -->
+<resources>
+    <string name="ui_text_dbafc913" formatted="false">最成熟稳定的 RDP 实现，支持 EGFX、H.264 硬件加速视频和音频，推荐用于连接 Windows 远程桌面。</string>
+    <string name="ui_text_96778d53" formatted="false">基于 Rust 的 RDP 实现，CPU 占用低于 FreeRDP，但丢帧较多。</string>
+    <string name="ui_text_86b07dfb" formatted="false">适合大多数常规使用场景，小范围增量更新时带宽占用最低，CPU 效率最高。</string>
+    <string name="ui_text_543f35f4" formatted="false">RealVNC 专有客户端实现，唯一支持 UDP、ZRLE2 及 RealVNC 专有身份验证与加密机制。连接 RealVNC 服务器时，尤其在常规桌面操作中，表现明显优于其他实现。</string>
+    <string name="ui_text_f3da6923" formatted="false">基于 Rust 的 RFB 实现。不支持 Tight 编码，通常占用更多带宽，在低速网络上表现较差。服务器支持时允许远程指针位置更新。</string>
+    <string name="ui_text_fa0dc1b7" formatted="false">RustDesk 后端，支持直连或通过会合服务器连接，使用硬件加速视频编解码器。</string>
+    <string name="ui_text_a074592e" formatted="false">通常用于 QEMU、libvirt 或 Proxmox 虚拟机。虚拟机代理运行时支持剪贴板及屏幕尺寸调整。</string>
+    <string name="ui_text_5ed0950e" formatted="false">速度最快、丢帧最少，但 CPU 占用约为其他实现的 2–5 倍。唯一支持 H.264 编码的 VNC 后端，服务器支持时，大面积画面更新最节省带宽。另支持 QEMU 音频。</string>
+    <string name="ui_text_90ebde92" formatted="false">网络级别身份验证（NLA）</string>
+    <string name="ui_text_c0b1c59c" formatted="false">使用 CredSSP 在会话开始前进行身份验证，而不是通过服务器端登录界面验证身份。</string>
+    <string name="ui_text_39040b99" formatted="false">服务器支持时</string>
+    <string name="ui_text_d718f16a" formatted="false">服务器支持时</string>
+    <string name="ui_text_51e4b240" formatted="false">必须使用</string>
+    <string name="ui_text_b2ff2b29" formatted="false">从不</string>
+    <string name="ui_text_9ba4f293" formatted="false">旧版 TLS</string>
+    <string name="ui_text_e11b001a" formatted="false">允许 TLS 1.0、1.1 及其较弱的密钥，仅用于不支持更新协议的服务器，例如未更新的 Windows 7 或 Windows Server 2008 R2。</string>
+    <string name="ui_text_805ec738" formatted="false">桌面分辨率</string>
+    <string name="ui_text_1db224b2" formatted="false">首选远程屏幕分辨率。</string>
+    <string name="ui_text_70e938cf" formatted="false">显示缩放</string>
+    <string name="ui_text_a27c9b01" formatted="false">Windows 8.1 及更高版本支持。</string>
+    <string name="ui_text_efbe7bfe" formatted="false">显示器数量</string>
+    <string name="ui_text_4071f082" formatted="false">模拟多台显示器。</string>
+    <string name="ui_text_b62b9fa8" formatted="false">图形模式</string>
+    <string name="ui_text_ee4a6b47" formatted="false">EGFX 是较新的高级图形模式，RemoteFX 较旧，位图模式直接传输原始图像。</string>
+    <string name="ui_text_8f9f9cef" formatted="false">EGFX（不使用视频）</string>
+    <string name="ui_text_626a9046" formatted="false">位图</string>
+    <string name="ui_text_22c1036f" formatted="false">位图</string>
+    <string name="ui_text_8e98d45c" formatted="false">EGFX（实验性）</string>
+    <string name="ui_text_b7b7449b" formatted="false">Windows 优先使用 EGFX，支持 H.264；RemoteFX 较旧，位图模式直接传输原始图像。</string>
+    <string name="ui_text_cde44af7" formatted="false">视觉效果</string>
+    <string name="ui_text_bf58944e" formatted="false">在服务器支持时，控制动画和视觉效果的程度。</string>
+    <string name="ui_text_7fa5ff5c" formatted="false">完整</string>
+    <string name="ui_text_c0cc603d" formatted="false">均衡</string>
+    <string name="ui_text_749f3545" formatted="false">精简</string>
+    <string name="ui_text_f0408340" formatted="false">全部效果</string>
+    <string name="ui_text_378a393c" formatted="false">无动画</string>
+    <string name="ui_text_38861430" formatted="false">尽量精简</string>
+    <string name="ui_text_b3ca9a34" formatted="false">音频</string>
+    <string name="ui_text_56de9062" formatted="false">在服务器支持时，选择音频播放位置。</string>
+    <string name="ui_text_0dc6b4aa" formatted="false">关闭</string>
+    <string name="ui_text_fa0d176a" formatted="false">本机</string>
+    <string name="ui_text_3902f681" formatted="false">本机</string>
+    <string name="ui_text_65b4a54f" formatted="false">远程设备</string>
+    <string name="ui_text_961abb95" formatted="false">压缩</string>
+    <string name="ui_text_e5b57b45" formatted="false">启用连接层压缩，减少带宽占用，但增加 CPU 开销。</string>
+    <string name="ui_text_0e2a2510" formatted="false">编码方式</string>
+    <string name="ui_text_6eb55616" formatted="false">首选图像编码方式。设为非自动时将覆盖服务器的选择。</string>
+    <string name="ui_text_616a6784" formatted="false">自动</string>
+    <string name="ui_text_642cc992" formatted="false">Raw（未压缩）</string>
+    <string name="ui_text_9a92b8c2" formatted="false">编码方式支持时，设置图像压缩级别。</string>
+    <string name="ui_text_1f747f40" formatted="false">画质</string>
+    <string name="ui_text_e4c02eef" formatted="false">Tight 编码的 JPEG 图像质量。</string>
+    <string name="ui_text_815191a3" formatted="false">无损</string>
+    <string name="ui_text_387b0bb9" formatted="false">9（最佳）</string>
+    <string name="ui_text_ede3f513" formatted="false">5（均衡）</string>
+    <string name="ui_text_2983709d" formatted="false">0（体积最小）</string>
+    <string name="ui_text_21ae5640" formatted="false">色深</string>
+    <string name="ui_text_22049847" formatted="false">像素色深，下次连接时生效。</string>
+    <string name="ui_text_f86ee70f" formatted="false">全彩色（24 位）</string>
+    <string name="ui_text_5a28074b" formatted="false">6 位（rgb222）</string>
+    <string name="ui_text_94c68b8f" formatted="false">3 位（rgb111）</string>
+    <string name="ui_text_b1310860" formatted="false">编码和色深预设。</string>
+    <string name="ui_text_be0a061d" formatted="false">高</string>
+    <string name="ui_text_09be5f96" formatted="false">中</string>
+    <string name="ui_text_b1dd9521" formatted="false">低</string>
+    <string name="ui_text_9525b78e" formatted="false">自定义</string>
+    <string name="ui_text_ab063df6" formatted="false">首选图像编码方式，服务器仍可能选择其他编码。仅在画质设为自定义时使用。</string>
+    <string name="ui_text_111e49ca" formatted="false">JPEG（有损）</string>
+    <string name="ui_text_7204cdef" formatted="false">JRLE（有损）</string>
+    <string name="ui_text_3fd80569" formatted="false">像素色深。仅在画质设为低或自定义时使用。未设置时，低画质使用 8 色（rgb111）。</string>
+    <string name="ui_text_3764c564" formatted="false">64 色（rgb222）</string>
+    <string name="ui_text_dcc573f1" formatted="false">8 色（rgb111）</string>
+    <string name="ui_text_5b1cfe57" formatted="false">自动重连</string>
+    <string name="ui_text_1b8a0c01" formatted="false">连接中断后自动重建，无需确认。</string>
+    <string name="ui_text_3328d521" formatted="false">启用 UDP</string>
+    <string name="ui_text_a83a0684" formatted="false">启用基于 SCTP/RTP 的 RealVNC 专有 UDP 协议。若服务器在 500 毫秒内未响应，则回退至 TCP。</string>
+    <string name="ui_text_c8352b3c" formatted="false">加密</string>
+    <string name="ui_text_dab77eab" formatted="false">设置是否加密连接。</string>
+    <string name="ui_text_ef397786" formatted="false">仅在服务器要求时</string>
+    <string name="ui_text_71982aec" formatted="false">由服务器决定</string>
+    <string name="ui_text_d148b69a" formatted="false">未加密时警告</string>
+    <string name="ui_text_bed5eb39" formatted="false">连接不支持加密的服务器时显示警告。</string>
+    <string name="ui_text_403eb0e1" formatted="false">隐藏指针时显示圆点</string>
+    <string name="ui_text_0b0d72fc" formatted="false">服务器隐藏指针时显示一个圆点。</string>
+    <string name="ui_text_6d223c39" formatted="false">保活间隔</string>
+    <string name="ui_text_724ce2f0" formatted="false">空闲连接中两次保活之间的秒数。</string>
+    <string name="ui_text_9c282d53" formatted="false">保活超时</string>
+    <string name="ui_text_bebe51ee" formatted="false">放弃连接前等待响应的秒数。</string>
+    <string name="ui_text_a67e9e8b" formatted="false">获取 RealVNC 库</string>
+    <string name="ui_text_22fb04d3" formatted="false">缺少 RealVNC Viewer 专有库时的获取方式：off（禁用）、prompt（询问后下载）、auto（自动下载）、本地 APK 路径或 APK 的 HTTP(S) 地址。</string>
+    <string name="ui_text_b07cf2b0" formatted="false">TLS（VeNCrypt）扩展支持。</string>
+    <string name="ui_text_b1ce9146" formatted="false">连接方式</string>
+    <string name="ui_text_700560f3" formatted="false">地址</string>
+    <string name="ui_text_c1fbc356" formatted="false">通过会合服务器按 ID 连接，连接已加密。</string>
+    <string name="ui_text_9e2a975d" formatted="false">通过 IP 直连设备，连接未加密。</string>
+    <string name="ui_text_bfc6f851" formatted="false">会合服务器</string>
+    <string name="ui_text_09346013" formatted="false">留空以使用默认的公共会合服务器。</string>
+    <string name="ui_text_50bed01a" formatted="false">会合服务器公钥</string>
+    <string name="ui_text_a09401e9" formatted="false">会合服务器的公钥。</string>
+    <string name="ui_text_cb7fbec6" formatted="false">画质</string>
+    <string name="ui_text_3c62b0e3" formatted="false">控制视频码率。</string>
+    <string name="ui_text_035f1f67" formatted="false">最佳</string>
+    <string name="ui_text_ac794580" formatted="false">帧率</string>
+    <string name="ui_text_3a92de1b" formatted="false">限制最高帧率。</string>
+    <string name="ui_text_858af655" formatted="false">编解码器</string>
+    <string name="ui_text_818348da" formatted="false">服务器支持时使用首选编解码器。</string>
+    <string name="ui_text_b8acdac7" formatted="false">播放远程设备的音频。</string>
+    <string name="ui_text_ac3324c5" formatted="false">会话结束时锁屏</string>
+    <string name="ui_text_877587dc" formatted="false">断开连接时锁定远程屏幕。</string>
+    <string name="ui_text_304ff7fb" formatted="false">无</string>
+    <string name="ui_text_380d76aa" formatted="false">明文传输。</string>
+    <string name="ui_text_57ad8ac7" formatted="false">加密传输。</string>
+    <string name="ui_text_45064ff8" formatted="false">图像压缩</string>
+    <string name="ui_text_70718590" formatted="false">首选图像压缩方式。</string>
+    <string name="ui_text_e6804a7f" formatted="false">GLZ（效果更好时）</string>
+    <string name="ui_text_19e7b75e" formatted="false">LZ（效果更好时）</string>
+    <string name="ui_text_6f7fc65d" formatted="false">服务器提供音频时进行播放。</string>
+    <string name="ui_text_bbba353a" formatted="false">仅查看</string>
+    <string name="ui_text_af728fe8" formatted="false">不发送输入事件。</string>
+    <string name="ui_text_287242dd" formatted="false">不发送输入或剪贴板事件。</string>
+    <string name="ui_text_593158f2" formatted="false">首选图像编码方式，服务器仍可能选择其他编码。</string>
+    <string name="ui_text_4e2c39c9" formatted="false">像素色深。</string>
+    <string name="ui_text_947cfbe4" formatted="false">允许 H.264 编码</string>
+    <string name="ui_text_74834bed" formatted="false">允许服务器使用 H.264 编码，并在本机进行硬件加速解码。</string>
+    <string name="ui_text_e94dad58" formatted="false">响铃</string>
+    <string name="ui_text_a12c66ff" formatted="false">服务器响铃时振动。</string>
+    <string name="ui_text_eb0bbef4" formatted="false">共享会话</string>
+    <string name="ui_text_2062fb39" formatted="false">不要求服务器断开其他客户端。</string>
+    <string name="ui_text_aceb3feb" formatted="false">未经验证的加密</string>
+    <string name="ui_text_bf235d06" formatted="false">在缺少对端证书的情况下使用加密前进行确认。</string>
+    <string name="ui_text_9fb86801" formatted="false">1（最快）</string>
+    <string name="ui_text_2ef26a18" formatted="false">6（均衡）</string>
+    <string name="ui_text_6b4b7ae4" formatted="false">9（体积最小）</string>
+    <string name="ui_text_66fd42e3" formatted="false">不更改</string>
+    <string name="ui_text_0f93ef11" formatted="false">匹配本机分辨率</string>
+    <string name="ui_text_1cb1b18f" formatted="false">一台</string>
+    <string name="ui_text_20af1fc9" formatted="false">两台</string>
+    <string name="ui_text_2e430863" formatted="false">三台</string>
+    <string name="ui_text_082ab98e" formatted="false">指针加速</string>
+    <string name="ui_text_2656b10a" formatted="false">根据手势速度调整指针移动距离。</string>
+    <string name="ui_text_85d8aa49" formatted="false">自适应加速</string>
+    <string name="ui_text_538edb9f" formatted="false">低速移动时降低加速，提高定位精度。</string>
+    <string name="ui_text_89c6a865" formatted="false">轴向锁定</string>
+    <string name="ui_text_e24f5b54" formatted="false">将缓慢的直线移动吸附至水平或垂直轴。</string>
+    <string name="ui_text_6eedd764" formatted="false">悬停辅助</string>
+    <string name="ui_text_44b09912" formatted="false">远程指针形状变化时短暂降低移动速度。</string>
+    <string name="ui_text_3079cfef" formatted="false">惯性</string>
+    <string name="ui_text_9e58cbcb" formatted="false">快速滑动后让指针继续移动。</string>
+    <string name="ui_text_bdc1c07b" formatted="false">远程相对指针使用原始移动</string>
+    <string name="ui_text_2a8241fc" formatted="false">当远程指针使用相对移动时，跳过加速、轴向锁定和惯性。</string>
+    <string name="ui_text_e33a28c3" formatted="false">边缘滚动</string>
+    <string name="ui_text_167cfe84" formatted="false">拖动至屏幕边缘时平移桌面。</string>
+    <string name="ui_text_1c5988fd" formatted="false">自然滚动</string>
+    <string name="ui_text_a96aedff" formatted="false">反转手势和鼠标滚轮的滚动方向。</string>
+    <string name="ui_text_bb5c9eae" formatted="false">缩放时指针回到中心</string>
+    <string name="ui_text_a7a7238e" formatted="false">缩放比例变化时将指针移至视图中心。</string>
+    <string name="ui_text_cf5bf163" formatted="false">平移留白（显示区域）</string>
+    <string name="ui_text_9ea04d80" formatted="false">增加平移空间，避免桌面边缘被圆角、摄像头开孔及系统栏遮挡。</string>
+    <string name="ui_text_1550cc49" formatted="false">平移留白（像素）</string>
+    <string name="ui_text_03c17d57" formatted="false">为桌面边缘增加额外平移空间，无论是否存在遮挡。</string>
+    <string name="ui_text_26def047" formatted="false">扩展键盘栏独立显示</string>
+    <string name="ui_text_6a38d5b2" formatted="false">将桌面显示区域缩至扩展键盘栏上方，而不是将键盘栏半透明叠加在桌面上。</string>
+    <string name="ui_text_4912de77" formatted="false">扩展键盘触觉反馈</string>
+    <string name="ui_text_0feb4dcb" formatted="false">按下扩展键盘按键时振动。</string>
+    <string name="ui_text_62ab8141" formatted="false">捕获实体鼠标</string>
+    <string name="ui_text_4e89cf71" formatted="false">连接时捕获指针，发送相对移动，而不是使用本机指针。</string>
+    <string name="ui_text_c6342fbc" formatted="false">实体鼠标速度</string>
+    <string name="ui_text_6868158e" formatted="false">已捕获鼠标移动的速度倍率。</string>
+    <string name="ui_text_ef164d02" formatted="false">实体鼠标滚轮步长</string>
+    <string name="ui_text_9cfad3f7" formatted="false">每次发送滚动事件所需的滚轮刻度数。高精度滚轮可适当增大此值。</string>
+    <string name="ui_text_e7a5ac47" formatted="false">点击按住时长（毫秒）</string>
+    <string name="ui_text_fa6fa546" formatted="false">轻点时按键的保持时长，以及双击和轻点后拖动的时间窗口。</string>
+    <string name="ui_text_f300b343" formatted="false">双指滚动步长（像素）</string>
+    <string name="ui_text_ada35114" formatted="false">每次发送滚动事件所需的手指移动距离。</string>
+    <string name="ui_text_813a0b44" formatted="false">滚动条传动比（每次滚动的节拍数）</string>
+    <string name="ui_text_e61ffcd2" formatted="false">速率为 1 时两次滚动事件的间隔节拍数，靠近滚动条两端时逐渐减小。</string>
+    <string name="ui_text_d20372bd" formatted="false">滚动条最大速率（每节拍滚动次数）</string>
+    <string name="ui_text_1371e0f2" formatted="false">滚动条两端的滚动速率，向中间逐渐降至零。</string>
+    <string name="ui_text_cf8d0cb9" formatted="false">滚动条节拍（毫秒）</string>
+    <string name="ui_text_3e860aa0" formatted="false">上述两项设置所使用的基础时间间隔。</string>
+    <string name="ui_text_21a851ee" formatted="false">滚动条重复延迟（节拍数）</string>
+    <string name="ui_text_3003986a" formatted="false">首次滚动事件重复前的节拍数，确保轻点只产生一次滚动。</string>
+    <string name="ui_text_8e77ed6d" formatted="false">已传输</string>
+</resources>
