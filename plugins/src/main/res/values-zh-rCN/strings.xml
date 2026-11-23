@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: 2026 Patrick Gaskin
+    SPDX-License-Identifier: GPL-3.0-or-later
+
+    An add-on can override any of these by declaring the same name, for
+    example to name its library where that is clearer than a description.
+-->
+<resources>
+    <string name="plugin_from_file">选择 APK 文件</string>
+    <string name="plugin_from_download">下载 APK</string>
+
+    <string name="plugin_asking">正在 %1$s 上查找 APK</string>
+    <string name="plugin_downloading">正在从 %1$s 下载 APK</string>
+    <string name="plugin_reading">正在复制所选 APK</string>
+    <string name="plugin_opening">正在读取 APK</string>
+    <string name="plugin_extracting">正在提取并验证 %1$s</string>
+
+    <string name="plugin_wrong_device">此库没有适用于本机的构建版本。</string>
+    <!-- Worded like the Settings switch the button opens. -->
+    <string name="plugin_no_network">此应用无权访问网络。</string>
+    <string name="plugin_allow_network">允许网络访问</string>
+    <string name="plugin_not_in_it">该文件未包含所需的库。</string>
+    <string name="plugin_unreadable">无法读取该文件。</string>
+    <string name="plugin_failed">操作失败。</string>
+</resources>

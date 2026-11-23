@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: 2026 Patrick Gaskin
+    SPDX-License-Identifier: GPL-3.0-or-later
+-->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Vento</string>
+    <string name="nav_back">返回</string>
+
+    <!-- home -->
+    <string name="home_empty_title">暂无连接</string>
+    <string name="home_empty">点击 + 添加连接。</string>
+    <string name="home_empty_playground">在练习场体验操作方式</string>
+    <string name="home_add">添加连接</string>
+    <string name="home_settings">设置</string>
+    <string name="home_view_list">列表视图</string>
+    <string name="home_view_grid">网格视图</string>
+    <string name="home_delete">删除</string>
+    <string name="home_pin">置顶</string>
+    <string name="home_unpin">取消置顶</string>
+    <string name="home_pinned">已置顶</string>
+    <string name="home_reorder">调整置顶顺序</string>
+    <string name="home_reorder_drag">拖动调整顺序</string>
+    <string name="home_reorder_up">上移</string>
+    <string name="home_reorder_down">下移</string>
+    <string name="home_connected">已连接</string>
+    <string name="home_delete_title">删除 %1$s？</string>
+    <string name="home_delete_message">此连接、已保存的凭据和预览将被永久删除。</string>
+
+    <!-- launcher shortcuts: the menu behind the app icon, and icons on the home screen -->
+    <string name="shortcut_label">%1$s（%2$s）</string>
+    <!-- Shown when a home screen icon's connection no longer exists. Not
+         "deleted": it is also shown on a phone restored without it. -->
+    <string name="shortcut_deleted">此连接已不存在。</string>
+
+    <!-- plugins: cards on the home screen, and one dialog wherever a backend of theirs is used -->
+    <string name="plugin_needs_setup">%1$s 后端需要额外配置。</string>
+    <!-- Why a plugin was not loaded. Kept general, since the detail line under it gives the specifics. -->
+    <string name="plugin_incompatible">此插件与当前应用版本不兼容。</string>
+    <string name="plugin_failed">此插件加载失败。</string>
+    <string name="plugin_restart_title">插件已更改</string>
+    <string name="plugin_restart">重新启动应用以使用本机安装的插件。</string>
+    <string name="plugin_restart_action">重新启动</string>
+    <string name="plugin_restart_confirm">断开连接并重新启动？</string>
+    <string name="plugin_restart_sessions">重新启动应用会断开所有会话。</string>
+    <string name="plugin_set_up">配置</string>
+    <string name="plugin_uninstall">卸载</string>
+    <!-- Opens a download of the plugin built for this version of the app, if the plugin
+         provides one. Only shown on an incompatible plugin's card. -->
+    <string name="plugin_update">更新</string>
+
+    <!-- editor -->
+    <string name="editor_new">新建连接</string>
+    <string name="editor_edit">编辑连接</string>
+    <string name="editor_name">名称</string>
+    <string name="editor_address">地址（主机名或 IP[:端口]）</string>
+    <string name="editor_credentials_clear">清除已保存的凭据</string>
+    <string name="editor_credentials_saved">已保存的密码通过硬件支持的密钥库使用 AES-256-GCM 加密。</string>
+    <string name="editor_credentials_none">连接时将提示输入凭据。</string>
+    <string name="editor_credentials_title">清除已保存的凭据？</string>
+    <string name="editor_credentials_message">已保存的用户名和/或密码将被删除。</string>
+    <string name="editor_credentials_confirm">清除</string>
+    <string name="editor_backend">协议</string>
+    <string name="editor_options">选项</string>
+    <string name="editor_option_default">应用默认值：%1$s</string>
+    <string name="editor_option_on">开启</string>
+    <string name="editor_option_off">关闭</string>
+    <string name="editor_home_screen">添加到主屏幕</string>
+    <string name="editor_home_screen_failed">默认桌面启动器不支持快捷方式。</string>
+    <string name="editor_save">保存</string>
+    <string name="editor_discard">放弃</string>
+    <string name="editor_keep_editing">继续编辑</string>
+    <string name="editor_keep_title">保存更改？</string>
+    <string name="editor_keep_message">此连接存在尚未保存的更改。</string>
+    <string name="editor_discard_title">放弃此连接？</string>
+    <string name="editor_address_required">必须填写地址。</string>
+
+    <!-- settings -->
+    <string name="settings_title">设置</string>
+    <string name="settings_group_sessions">会话</string>
+    <string name="settings_group_backends">协议后端</string>
+    <string name="settings_group_app">应用</string>
+    <!-- Shown on a backend that came from an add-on, with the package as its summary. -->
+    <string name="settings_plugin">插件</string>
+    <!-- On the row of a backend whose plugin needs setup, in place of its settings. -->
+    <string name="settings_backend_setup">尚未配置</string>
+    <string name="settings_general">通用</string>
+    <string name="settings_general_summary">键盘、剪贴板和控制方式。</string>
+    <string name="settings_input">触控与指针</string>
+    <string name="settings_input_summary">指针加速、惯性和滚动。</string>
+    <string name="settings_playground">操作练习场</string>
+    <string name="settings_playground_summary">用于测试输入操作的模拟桌面。</string>
+    <string name="settings_licenses">开源许可</string>
+    <string name="settings_licenses_summary">许可协议与第三方库。</string>
+    <string name="settings_source">源代码</string>
+    <string name="settings_source_summary">github.com/pgaskin/vento</string>
+    <string name="settings_version">版本</string>
+    <!-- Ten taps on the version row, as in Android's own developer options. The
+         countdown is only shown for the last three, so it is not found by accident. -->
+    <string name="settings_developer_on">开发者模式已开启！</string>
+    <string name="settings_developer_already">开发者模式已开启，无需重复操作。</string>
+    <plurals name="settings_developer_steps">
+        <item quantity="one">再点击 %1$d 次即可开启开发者模式。</item>
+        <item quantity="other">再点击 %1$d 次即可开启开发者模式。</item>
+    </plurals>
+    <string name="settings_session_timeout">会话超时</string>
+    <string name="settings_session_timeout_summary">自动断开长时间未活动的会话。</string>
+    <string name="settings_session_timeout_never">永不</string>
+    <plurals name="duration_minutes">
+        <item quantity="one">%1$d 分钟</item>
+        <item quantity="other">%1$d 分钟</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">%1$d 小时</item>
+        <item quantity="other">%1$d 小时</item>
+    </plurals>
+    <string name="settings_hud">调试信息浮层</string>
+    <string name="settings_hud_summary">显示指针、视口、手势和渲染调试信息。</string>
+    <string name="settings_keep_awake">保持屏幕常亮</string>
+    <string name="settings_keep_awake_summary">连接期间禁用屏幕自动关闭。</string>
+    <string name="settings_immersive">全屏模式</string>
+    <string name="settings_immersive_summary">连接期间隐藏系统状态栏和导航栏。</string>
+    <string name="settings_private_ime">将远程桌面视为密码输入框</string>
+    <string name="settings_private_ime_summary">禁用输入法的候选建议、自动纠错和学习功能。</string>
+    <string name="settings_modifier_resets_ime">按修饰键时重置输入法状态</string>
+    <string name="settings_modifier_resets_ime_summary">在扩展键盘上按 Ctrl、Alt 或 Shift 时返回输入法主界面。</string>
+    <string name="settings_controls">会话控制方式</string>
+    <string name="settings_controls_summary">设置断开连接、连接信息、键盘和鼠标操作的显示方式。</string>
+    <string name="controls_toolbar">工具栏</string>
+    <string name="controls_regions">触控区域</string>
+    <string name="controls_both">工具栏与触控区域</string>
+    <string name="settings_two_line_keys">使用双行扩展键盘</string>
+    <string name="settings_two_line_keys_summary">减少扩展键盘所需的横向滚动。</string>
+    <string name="settings_mac_keys">显示附加修饰键</string>
+    <string name="settings_mac_keys_summary">在扩展键盘中显示 Option 和 Command 键。</string>
+    <string name="settings_clipboard_out">发送剪贴板</string>
+    <string name="settings_clipboard_out_summary">将本机复制的文本发送到远程设备。</string>
+    <string name="settings_clipboard_in">接收剪贴板</string>
+    <string name="settings_clipboard_in_summary">用远程设备复制的文本更新本机剪贴板。</string>
+    <string name="settings_release_keys">失去焦点时释放按键</string>
+    <string name="settings_release_keys_summary">切换应用时释放本机所有处于按下状态的按键。</string>
+    <string name="settings_region_hints">连接时询问控制方式</string>
+    <string name="settings_region_hints_summary">在首帧显示后介绍会话控制方式，并允许选择。</string>
+    <string name="settings_previews">保存桌面预览</string>
+    <string name="settings_previews_summary">在本机加密保存远程桌面预览截图。关闭此项会删除所有现有截图。</string>
+    <string name="settings_external_launch">允许外部应用启动连接</string>
+    <string name="settings_external_launch_summary">允许其他应用或 ADB 启动 SessionActivity。</string>
+    <string name="settings_connection_defaults">连接默认设置</string>
+    <string name="settings_reset">重置</string>
+    <string name="settings_reset_summary">将上述设置恢复为默认值。</string>
+    <string name="settings_reset_all">恢复默认设置</string>
+    <string name="settings_reset_all_summary">重置所有会话、协议后端和应用设置，不影响已保存的连接。</string>
+    <string name="settings_reset_all_confirm">重置所有设置？</string>
+    <string name="settings_reset_all_do">重置</string>
+    <string name="settings_reset_all_done">设置已清除</string>
+    <!-- The other four rows in the same group, each destroying one store. The summary
+         is also the question the dialog asks, so it has to read as both. -->
+    <string name="settings_delete">删除</string>
+    <string name="settings_clear">清除</string>
+    <string name="settings_forget">忘记</string>
+    <string name="settings_delete_connections">删除所有连接</string>
+    <string name="settings_delete_connections_summary">永久删除所有已保存的连接及其凭据和预览。</string>
+    <string name="settings_delete_connections_confirm">删除所有连接？</string>
+    <plurals name="settings_delete_connections_done">
+        <item quantity="one">已删除 %1$d 个连接</item>
+        <item quantity="other">已删除 %1$d 个连接</item>
+    </plurals>
+    <string name="settings_forget_hosts">清除已知主机</string>
+    <string name="settings_forget_hosts_summary">忘记所有已接受的服务器证书。</string>
+    <string name="settings_forget_hosts_confirm">清除已知主机？</string>
+    <string name="settings_forget_hosts_done">已清除已知主机</string>
+    <string name="settings_clear_libraries">清除插件库缓存</string>
+    <string name="settings_clear_libraries_summary">删除插件提供的原生库的缓存副本。</string>
+    <string name="settings_clear_libraries_confirm">清除插件库缓存？</string>
+    <string name="settings_clear_libraries_done">已清除插件库缓存</string>
+    <string name="settings_delete_recordings">删除练习场录制记录</string>
+    <string name="settings_delete_recordings_summary">删除练习场生成的触控与键盘输入记录。</string>
+    <string name="settings_delete_recordings_confirm">删除练习场录制记录？</string>
+    <plurals name="settings_delete_recordings_done">
+        <item quantity="one">已删除 %1$d 条录制记录</item>
+        <item quantity="other">已删除 %1$d 条录制记录</item>
+    </plurals>
+
+    <!-- import and export -->
+    <string name="settings_transfer">导入与导出</string>
+    <string name="settings_transfer_summary">备份或恢复设置与连接。</string>
+    <string name="transfer_export_connections">导出连接</string>
+    <string name="transfer_export_connections_summary">保存所有连接，可选择包含已保存的密码。</string>
+    <string name="transfer_export_connections_message">导出文件未加密，不包含受信任的主机和桌面预览。</string>
+    <string name="transfer_export_passwords">包含已保存的密码</string>
+    <string name="transfer_export_settings">导出设置</string>
+    <string name="transfer_export_settings_summary">保存所有应用与协议后端设置。</string>
+    <string name="transfer_export">导出</string>
+    <string name="transfer_unlock_title">解锁设备以导出凭据</string>
+    <string name="transfer_unlock_message">未加密的导出文件将包含已保存的密码。</string>
+    <string name="transfer_import">导入</string>
+    <string name="transfer_import_summary">导入之前导出的文件。默认将连接追加到现有列表。</string>
+    <string name="transfer_import_apply">导入</string>
+    <string name="transfer_import_connections_title">导入连接</string>
+    <plurals name="transfer_import_connections_message">
+        <item quantity="one">此文件包含 %1$d 个连接。将跳过使用不受支持后端的连接。</item>
+        <item quantity="other">此文件包含 %1$d 个连接。将跳过使用不受支持后端的连接。</item>
+    </plurals>
+    <string name="transfer_import_settings_title">导入设置</string>
+    <plurals name="transfer_import_settings_message">
+        <item quantity="one">此文件包含 %1$d 项设置，其他设置保持不变。</item>
+        <item quantity="other">此文件包含 %1$d 项设置，其他设置保持不变。</item>
+    </plurals>
+    <string name="transfer_import_replace">删除现有连接</string>
+    <string name="transfer_import_reset">先重置所有设置</string>
+    <plurals name="transfer_exported_connections">
+        <item quantity="one">已导出 %1$d 个连接</item>
+        <item quantity="other">已导出 %1$d 个连接</item>
+    </plurals>
+    <plurals name="transfer_exported_settings">
+        <item quantity="one">已导出 %1$d 项设置</item>
+        <item quantity="other">已导出 %1$d 项设置</item>
+    </plurals>
+    <!-- Pluralised on the total rather than the imported count, since the noun
+         follows the second number. -->
+    <plurals name="transfer_imported_connections">
+        <item quantity="one">已导入 %1$d 个连接，共 %2$d 个</item>
+        <item quantity="other">已导入 %1$d 个连接，共 %2$d 个</item>
+    </plurals>
+    <plurals name="transfer_imported_settings">
+        <item quantity="one">已应用 %1$d 项设置，共 %2$d 项</item>
+        <item quantity="other">已应用 %1$d 项设置，共 %2$d 项</item>
+    </plurals>
+    <string name="transfer_failed_title">错误</string>
+    <string name="transfer_bad_file">所选文件无效，或由较新版本的应用生成。</string>
+    <string name="transfer_write_failed">无法写入文件。</string>
+
+    <!-- session -->
+    <string name="session_no_backend">当前构建不完整，未包含任何协议后端。</string>
+    <string name="session_no_such_backend">当前构建未包含 %1$s 后端。请编辑连接并选择其他后端。</string>
+    <string name="session_no_address">未提供地址。请传入 --es address host[:port]。</string>
+    <string name="session_backend_setup">必须先配置 %1$s 才能连接。</string>
+    <string name="session_connecting">正在连接…</string>
+    <string name="session_disconnected">连接已断开</string>
+    <string name="session_timed_out">已因 %1$s 超时而关闭</string>
+    <string name="session_disconnect">断开连接</string>
+    <string name="session_disconnect_confirm">断开连接？</string>
+    <string name="session_new_window">新窗口</string>
+    <string name="hints_title">控制方式</string>
+    <string name="hints_message">选择如何使用断开连接、连接信息、键盘和鼠标功能。屏幕其余区域用于控制远程桌面。</string>
+    <string name="hints_dismiss">不再询问</string>
+    <string name="hints_region_disconnect">断开连接</string>
+    <string name="hints_region_information">连接信息</string>
+    <string name="hints_region_keyboard">键盘</string>
+    <string name="hints_region_mouse">鼠标</string>
+
+    <!-- the connection panel -->
+    <string name="panel_close">关闭</string>
+    <string name="panel_reconnect">重新连接</string>
+    <string name="panel_not_set">未设置</string>
+    <string name="panel_connected">已连接 · %1$s</string>
+    <string name="option_follow_window">随本机窗口大小调整</string>
+    <string name="option_follow_window_summary">如果远程桌面支持且已启用本机分辨率，窗口方向或尺寸变化时自动更新分辨率。</string>
+    <string name="panel_connected_size">已连接 · %1$s · %2$d × %3$d</string>
+    <!-- Not a plural: the line above is used for one monitor, and this one only
+         for two or more. -->
+    <string name="panel_connected_monitors" tools:ignore="PluralsCandidate">已连接 · %1$s · %2$d × %3$d · %4$d 台显示器</string>
+    <string name="panel_display">显示器</string>
+    <string name="panel_display_value">%1$d · %2$d × %3$d</string>
+    <string name="panel_desktop_size">桌面分辨率</string>
+    <!-- The session's sound switch, worded as in the desktop client. Enable
+         where the far end can be asked to stop sending sound; Mute where it
+         cannot, and the sound is silenced on this phone instead. -->
+    <string name="panel_sound_enable">启用音频</string>
+    <string name="panel_sound_mute">静音</string>
+    <string name="panel_desktop_size_value">%1$d × %2$d</string>
+    <string name="panel_desktop_size_device">%1$d × %2$d（本机）</string>
+
+    <!-- The screenshot button's tooltip and content description. It shares the
+         whole desktop at the far end's size, not the part shown on this phone. -->
+    <string name="panel_screenshot">截取桌面截图</string>
+    <!-- Covers both failures: no frame to capture, or nowhere to write it. -->
+    <string name="screenshot_failed">无法截取远程桌面。</string>
+
+    <string name="panel_log">查看日志</string>
+    <string name="log_title">日志</string>
+    <string name="log_copy">复制</string>
+    <string name="log_copied">已复制到剪贴板</string>
+    <string name="log_reading">正在读取 logcat…</string>
+    <string name="log_unreadable">读取 logcat 失败。</string>
+    <string name="log_empty">日志为空。</string>
+
+    <!-- the credential and certificate prompts -->
+    <string name="prompt_username">用户名</string>
+    <string name="prompt_password">密码</string>
+    <string name="prompt_credentials_title">身份验证</string>
+    <string name="prompt_connect">连接</string>
+    <string name="prompt_continue">继续</string>
+    <string name="prompt_remember_password">保存密码</string>
+    <string name="prompt_remember_server">记住服务器</string>
+    <string name="prompt_catchphrase">校验短语：%1$s</string>
+    <string name="prompt_signature">签名：%1$s</string>
+    <string name="prompt_trust_title">仍要连接？</string>
+    <string name="prompt_trust_changed">此服务器的身份与上次连接时不同。</string>
+    <string name="prompt_trust_another">此服务器与之前连接过的 %1$s 具有相同的身份。</string>
+    <string name="prompt_trust_another_address">其他地址</string>
+    <string name="prompt_trust_new">你之前未连接过此服务器。</string>
+    <string name="prompt_trust_missing">无法验证此服务器的身份。</string>
+    <string name="prompt_unencrypted">此连接未加密。</string>
+
+    <!-- the notification that keeps a session alive -->
+    <string name="channel_session">已连接的会话</string>
+    <string name="channel_session_description">活动会话通知。</string>
+
+    <!-- the extension keyboard's paste key -->
+    <string name="paste_title">粘贴</string>
+    <plurals name="paste_confirm">
+        <item quantity="one">此操作将以原始按键输入的方式向远程设备输入 %1$d 个字符。</item>
+        <item quantity="other">此操作将以原始按键输入的方式向远程设备逐字输入 %1$d 个字符，一旦开始便无法停止。</item>
+    </plurals>
+    <string name="paste_modifiers">%1$s 已锁定，因此输入的所有字符都将带有该修饰键。</string>
+    <string name="paste_confirm_yes">开始输入</string>
+    <string name="paste_empty">剪贴板中没有内容。</string>
+
+    <!-- a session started by another app or adb with an address, while that is not allowed -->
+    <string name="session_external_launch_off">已忽略来自外部应用的连接请求。</string>
+</resources>

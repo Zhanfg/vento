@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: 2026 Patrick Gaskin
+    SPDX-License-Identifier: GPL-3.0-or-later
+-->
+<resources>
+    <string name="app_name">Vento RealVNC 后端</string>
+    <string name="setup_title">RealVNC</string>
+    <string name="setup_explanation">此后端需要 RealVNC Viewer %1$s APK 中的专有库。你可以选择本地文件，也可以自动下载并验证。</string>
+</resources>
